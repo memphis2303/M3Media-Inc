@@ -292,3 +292,116 @@ body:not(.studio-page) .portfolio-section{padding:15px clamp(12px,2vw,36px) 70px
 @media(max-width:1050px){.editorial-header{flex-wrap:wrap!important;gap:12px!important}.editorial-header .nav{width:100%!important;justify-content:space-between!important}.editorial-header .nav-main{gap:14px!important}.editorial-header .nav-main a{font-size:10px!important}.service-strip strong{font-size:12px}}
 @media(max-width:700px){.editorial-header{min-height:70px!important;flex-wrap:nowrap!important}.editorial-header .brand-script{font-size:35px}.editorial-header .brand-wordmark{font-size:16px}.editorial-header .brand-wordmark small{font-size:5px}.editorial-header .menu-toggle{display:flex!important;z-index:40!important}.editorial-header .nav{display:none!important;position:absolute!important;top:100%!important;left:0!important;right:0!important;width:100%!important;background:#070707!important;padding:20px!important;flex-direction:column!important;align-items:stretch!important}.editorial-header .nav.open{display:flex!important}.editorial-header .nav-main{flex-direction:column!important;align-items:flex-start!important}.editorial-header .nav-actions{margin-top:10px}.hero{aspect-ratio:16/10!important}body:not(.studio-page) .hero-content{padding:18px 35px!important}body:not(.studio-page) .hero-content h1{font-size:clamp(24px,6vw,42px)!important}body:not(.studio-page) .hero-content .hero-subtitle{letter-spacing:.13em!important}body:not(.studio-page) .hero-content .hero-link{padding:10px 12px!important;font-size:9px!important}.service-strip{grid-template-columns:repeat(2,1fr);gap:10px}.service-strip>a:nth-child(2){border-right:0}.editorial-categories{grid-template-columns:repeat(3,1fr)}.studio-link-section{grid-template-columns:1fr!important}.studio-promo-images{min-height:240px}.studio-promo-images img{min-height:240px}}
 @media(max-width:420px){.editorial-categories{grid-template-columns:repeat(2,1fr)}.service-strip small{font-size:8px}}
+
+
+/* Header-only reference update — matches the supplied black/gold navigation design. */
+@import url('https://fonts.googleapis.com/css2?family=Italiana&display=swap');
+.editorial-header.site-header{height:76px!important;min-height:76px!important;padding:0 clamp(20px,7vw,110px)!important;flex-wrap:nowrap!important;gap:clamp(18px,3vw,55px)!important;background:#030303!important;border-bottom:1px solid #24201b!important}
+.editorial-header .brand{display:flex!important;align-items:center!important;gap:9px!important;flex-shrink:0!important}
+.editorial-header .brand-script{font-family:'Italiana',Georgia,serif!important;font-style:italic!important;font-size:49px!important;letter-spacing:-.085em!important;color:#d6ad62!important;font-weight:400!important}
+.editorial-header .brand-wordmark{font-family:'Italiana',Georgia,serif!important;font-size:29px!important;letter-spacing:.025em!important;line-height:1.08!important;color:#f5f2ee!important}
+.editorial-header .brand-wordmark small{font-family:'DM Sans',Arial,sans-serif!important;font-size:7px!important;letter-spacing:.28em!important;margin-top:5px!important;color:#ddd!important}
+.editorial-header .nav{display:flex!important;align-items:center!important;justify-content:flex-end!important;flex:1!important;gap:clamp(20px,3.8vw,62px)!important;width:auto!important}
+.editorial-header .nav-main{display:flex!important;align-items:center!important;gap:clamp(12px,1.75vw,28px)!important;flex-wrap:nowrap!important}
+.editorial-header .nav-main a{font-family:'DM Sans',Arial,sans-serif!important;font-size:10px!important;font-weight:400!important;letter-spacing:.08em!important;padding:11px 0 8px!important;border-bottom:2px solid transparent!important;opacity:1!important}
+.editorial-header .nav-main a.header-active,.editorial-header .nav-main a[aria-current=page]{border-bottom-color:#d6ad62!important;color:#fff!important}
+.editorial-header .nav-main a:hover,.editorial-header .nav-main a:focus-visible{color:#d6ad62!important}
+.editorial-header .nav-actions{margin-left:0!important;flex-shrink:0!important}
+.editorial-header .book-btn{display:inline-flex!important;align-items:center!important;justify-content:center!important;min-width:126px!important;padding:12px 22px!important;border:1px solid #d6ad62!important;border-radius:0!important;font-size:10px!important;letter-spacing:.13em!important;font-weight:400!important}
+.editorial-header .book-btn:hover{background:#d6ad6220!important}
+@media(max-width:1280px){.editorial-header.site-header{padding-inline:3vw!important;gap:18px!important}.editorial-header .brand-script{font-size:42px!important}.editorial-header .brand-wordmark{font-size:23px!important}.editorial-header .nav{gap:16px!important}.editorial-header .nav-main{gap:13px!important}.editorial-header .nav-main a{font-size:9px!important}}
+@media(max-width:1050px){.editorial-header.site-header{height:72px!important;min-height:72px!important;padding:0 5%!important;flex-wrap:nowrap!important}.editorial-header .menu-toggle{display:flex!important;margin-left:auto!important;z-index:41!important}.editorial-header .nav{display:none!important;position:absolute!important;top:100%!important;left:0!important;right:0!important;width:100%!important;padding:22px 5%!important;background:#070707!important;border-bottom:1px solid #302820!important;flex-direction:column!important;align-items:stretch!important;gap:15px!important}.editorial-header .nav.open{display:flex!important}.editorial-header .nav-main{flex-direction:column!important;align-items:flex-start!important;gap:8px!important}.editorial-header .nav-main a{font-size:11px!important;padding:10px 0!important}.editorial-header .nav-actions{margin:5px 0 0!important}.editorial-header .book-btn{width:max-content!important}}
+@media(max-width:520px){.editorial-header .brand-script{font-size:37px!important}.editorial-header .brand-wordmark{font-size:20px!important}.editorial-header .brand-wordmark small{font-size:5.5px!important;letter-spacing:.16em!important}}
+
+/* Reference-matched layout — three-slide edition, separate portfolio */
+:root{--reference-gold:#d6ad61}
+.site-header.editorial-header{position:relative!important;inset:auto!important;max-width:none!important;width:100%!important;height:76px!important;padding:0 clamp(24px,6.8vw,120px)!important;background:#030303!important;border-bottom:1px solid #181818;display:flex;align-items:center;gap:28px;z-index:60}
+.site-header .brand{display:flex;align-items:center;gap:10px;text-decoration:none;flex-shrink:0}
+.site-header .brand-script{font-family:Georgia,serif;font-size:clamp(34px,3.4vw,51px);font-weight:400;font-style:italic;color:var(--reference-gold);line-height:1;letter-spacing:-.11em}
+.site-header .brand-wordmark{font-family:'Libre Caslon Display',Georgia,serif;font-size:clamp(22px,2vw,30px);font-weight:400;line-height:1;letter-spacing:.025em;display:block;color:#eee}
+.site-header .brand-wordmark small{font-family:'DM Sans',Arial,sans-serif;display:block;margin-top:7px;font-size:7px;letter-spacing:.31em;white-space:nowrap;color:#ccc}
+.site-header .nav{display:flex;flex:1;align-items:center;justify-content:flex-end;gap:clamp(15px,3.5vw,65px)}
+.site-header .nav-main{display:flex;align-items:center;gap:clamp(13px,1.8vw,30px)}
+.site-header .nav a:not(.book-btn){font-size:10px;letter-spacing:.075em;font-weight:500;white-space:nowrap;padding:10px 0;position:relative}
+.site-header .nav a:not(.book-btn):hover,.site-header .nav a[aria-current=page]{color:var(--reference-gold);opacity:1}
+.site-header .nav a[aria-current=page]:after{content:'';position:absolute;left:0;right:0;bottom:0;height:2px;background:var(--reference-gold)}
+.site-header .nav-actions{margin-left:0}
+.site-header .book-btn{display:inline-flex;align-items:center;justify-content:center;min-width:125px;padding:12px 20px;border:1px solid var(--reference-gold);border-radius:0;font-size:10px;font-weight:500;letter-spacing:.14em;color:white}
+.site-header .book-btn:hover{background:#d6ad6122}
+.hero{max-width:none!important;width:100%!important;aspect-ratio:32/9!important;height:auto!important;min-height:0!important;margin:0!important;background:#100c0b!important}
+.hero-image,.hero-image-next{background-size:cover!important;background-position:center 46%!important}
+.hero-image::before,.hero-image::after,.hero-image-next::before,.hero-image-next::after{display:none!important;content:none!important}
+.hero-shade{background:linear-gradient(90deg,#0005,#0005),linear-gradient(0deg,#0008,transparent 55%)!important}
+.hero-content{position:absolute!important;top:50%!important;bottom:auto!important;left:50%!important;right:auto!important;transform:translate(-50%,-50%);width:min(90%,950px);max-width:none!important;text-align:center!important;z-index:4}
+.hero-content .eyebrow{font-size:11px;letter-spacing:.48em;font-weight:400;margin:0 0 10px}
+.hero-content h1{font-family:'Libre Caslon Display',Georgia,serif;font-size:clamp(40px,5vw,84px)!important;font-weight:400;letter-spacing:.015em;line-height:1.07;margin:0 0 10px;white-space:nowrap}
+.hero-content h1 em{color:var(--reference-gold);font-family:Georgia,serif;font-style:italic}
+.hero-content .hero-subtitle{font-size:12px!important;letter-spacing:.45em!important;margin:0 0 24px}
+.hero-content .hero-link{display:inline-block;margin:0;padding:12px 17px;border:1px solid var(--reference-gold);font-size:10px;letter-spacing:.15em}
+.hero-arrow{z-index:6}.slide-progress{z-index:6;left:0!important;right:0!important;bottom:12px!important;justify-content:center!important;gap:9px!important}
+.slide-progress button{flex:0 0 11px!important;width:11px!important;height:11px!important;border-radius:50%;background:#888!important;opacity:.8}
+.slide-progress button.active{background:var(--reference-gold)!important;opacity:1}
+.slide-progress button:before{display:none!important}
+.home-categories{background:#000;padding:0 1.7% 18px}
+.home-categories .editorial-categories{margin:0}
+.portfolio-page .site-header{position:relative!important}.portfolio-page .portfolio-section{background:#000;color:#f5f5f5}
+.portfolio-page .portfolio-section .editorial-categories{display:none}
+.portfolio-page .portfolio-section{padding-top:70px}
+@media(max-width:1150px){.site-header.editorial-header{padding:0 4%!important}.site-header .menu-toggle{display:flex;margin-left:auto}.site-header .nav{display:none;position:absolute;top:76px;left:0;right:0;background:#080808;flex-direction:column;align-items:stretch;padding:25px 5%;gap:20px}.site-header .nav.open{display:flex}.site-header .nav-main{flex-direction:column;align-items:flex-start;gap:13px}.site-header .nav-actions{margin:0}}
+@media(max-width:850px){.hero{aspect-ratio:16/10!important}.hero-content h1{font-size:clamp(36px,6.3vw,65px)!important}}
+@media(max-width:600px){.hero{aspect-ratio:4/5!important}.hero-content{width:84%}.hero-content h1{font-size:clamp(31px,8vw,48px)!important;white-space:normal}.hero-content .hero-subtitle{font-size:9px!important;letter-spacing:.2em!important}.hero-arrow{font-size:37px}.site-header .brand-wordmark{font-size:21px}.site-header .brand-script{font-size:36px}}
+
+/* V24: stable centered canvas, precise header alignment and fixed 32:9 framing */
+:root{--stable-width:1600px}
+.site-header.editorial-header{position:relative!important;width:100%!important;max-width:var(--stable-width)!important;margin:0 auto!important;box-sizing:border-box!important;height:80px!important;min-height:80px!important;padding:0 clamp(24px,4vw,70px)!important;display:flex!important;align-items:center!important;justify-content:space-between!important;flex-wrap:nowrap!important;gap:clamp(16px,2.5vw,40px)!important}
+.editorial-header .brand{display:flex!important;align-items:center!important;gap:10px!important;flex:0 0 auto!important}
+.editorial-header .brand-script{line-height:1!important}
+.editorial-header .brand-wordmark{line-height:1.05!important}
+.editorial-header .brand-wordmark small{line-height:1.2!important}
+.editorial-header .nav{display:flex!important;flex:1 1 auto!important;min-width:0!important;width:auto!important;align-items:center!important;justify-content:flex-end!important;gap:clamp(16px,2vw,34px)!important;margin:0!important;flex-direction:row!important}
+.editorial-header .nav-main{display:flex!important;align-items:center!important;flex-direction:row!important;flex-wrap:nowrap!important;gap:clamp(10px,1.3vw,22px)!important}
+.editorial-header .nav-main a{line-height:1.35!important}
+.editorial-header .nav-actions{margin:0!important;display:flex!important;align-items:center!important}
+.editorial-header .book-btn{height:40px!important;min-width:124px!important}
+.hero{width:100%!important;max-width:var(--stable-width)!important;margin:0 auto!important;aspect-ratio:32/9!important;height:auto!important;min-height:0!important}
+.hero-image,.hero-image-next{background-size:cover!important;background-position:center 48%!important}
+.hero-content{width:min(85%,950px)!important}
+.hero-content h1{font-size:clamp(35px,4.8vw,78px)!important}
+.services-section,.studio-link-section{max-width:var(--stable-width)!important;margin-left:auto!important;margin-right:auto!important}
+@media(min-width:1600px){.hero-content h1{font-size:78px!important}}
+@media(max-width:1180px){.site-header.editorial-header{padding:0 3%!important;gap:14px!important}.editorial-header .brand-script{font-size:40px!important}.editorial-header .brand-wordmark{font-size:23px!important}.editorial-header .nav{gap:13px!important}.editorial-header .nav-main{gap:10px!important}.editorial-header .nav-main a{font-size:9px!important}.editorial-header .book-btn{min-width:100px!important;padding:10px!important}}
+@media(max-width:1000px){.site-header.editorial-header{height:76px!important;min-height:76px!important}.editorial-header .menu-toggle{display:flex!important;margin-left:auto!important}.editorial-header .nav{display:none!important;position:absolute!important;top:100%!important;left:0!important;right:0!important;width:100%!important;background:#080808!important;padding:22px 5%!important;flex-direction:column!important;align-items:stretch!important;gap:15px!important}.editorial-header .nav.open{display:flex!important}.editorial-header .nav-main{flex-direction:column!important;align-items:flex-start!important;gap:10px!important}.editorial-header .nav-main a{font-size:11px!important}.hero{aspect-ratio:32/9!important}.hero-content h1{font-size:clamp(26px,4.8vw,54px)!important}.hero-content .hero-subtitle{font-size:10px!important;letter-spacing:.2em!important}}
+@media(max-width:600px){.hero{aspect-ratio:16/10!important}.hero-content h1{white-space:normal!important;font-size:clamp(27px,7vw,42px)!important}.hero-content .hero-subtitle{white-space:normal!important}.hero-arrow{font-size:33px!important}}
+
+/* V25: keep the hero action completely inside the carousel at every width. */
+body:not(.studio-page) .hero-content{
+  inset:auto!important;
+  top:50%!important;
+  left:50%!important;
+  right:auto!important;
+  bottom:auto!important;
+  transform:translate(-50%,-50%)!important;
+  width:min(90%,900px)!important;
+  max-width:calc(100% - 100px)!important;
+  padding:0!important;
+  display:flex!important;
+  flex-direction:column!important;
+  align-items:center!important;
+  justify-content:center!important;
+  gap:clamp(3px,.5vw,10px)!important;
+}
+body:not(.studio-page) .hero-content .eyebrow{margin:0!important;font-size:clamp(8px,.8vw,12px)!important}
+body:not(.studio-page) .hero-content h1{margin:0!important;font-size:clamp(22px,4.2vw,68px)!important;line-height:1.05!important}
+body:not(.studio-page) .hero-content .hero-subtitle{margin:0!important;font-size:clamp(8px,.8vw,12px)!important;line-height:1.3!important}
+body:not(.studio-page) .hero-content .hero-link{position:relative!important;z-index:8!important;margin:clamp(2px,.65vw,12px) 0 0!important;padding:clamp(7px,.8vw,12px) clamp(11px,1.3vw,21px)!important;line-height:1.2!important;white-space:nowrap!important}
+@media(max-width:1000px){
+ body:not(.studio-page) .hero-content{max-width:calc(100% - 92px)!important;gap:3px!important}
+ body:not(.studio-page) .hero-content h1{font-size:clamp(18px,4vw,40px)!important}
+ body:not(.studio-page) .hero-content .hero-subtitle{font-size:9px!important;letter-spacing:.12em!important}
+ body:not(.studio-page) .hero-content .hero-link{font-size:9px!important;padding:7px 12px!important;margin-top:4px!important}
+}
+@media(max-width:600px){
+ body:not(.studio-page) .hero-content{max-width:calc(100% - 65px)!important}
+ body:not(.studio-page) .hero-content h1{font-size:clamp(24px,7vw,38px)!important;white-space:normal!important}
+ body:not(.studio-page) .hero-content .hero-link{font-size:9px!important;padding:10px 12px!important}
+}

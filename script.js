@@ -4,20 +4,9 @@ menuButton.addEventListener('click',()=>{const open=nav.classList.toggle('open')
 nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{nav.classList.remove('open');menuButton.setAttribute('aria-expanded','false')}));
 // Original photography supplied by M3 Media Inc. Images are optimized WebP copies.
 const slides = [
-  {src:'assets/slide-01.webp',alt:'M3 Media photography — featured image 1'},
-  {src:'assets/slide-02.webp',alt:'M3 Media photography — featured image 2'},
-  {src:'assets/slide-03.webp',alt:'M3 Media photography — featured image 3'},
-  {src:'assets/slide-04.webp',alt:'M3 Media photography — featured image 4'},
-  {src:'assets/slide-05.webp',alt:'M3 Media photography — featured image 5'},
-  {src:'assets/slide-06.webp',alt:'M3 Media photography — featured image 6'},
-  {src:'assets/slide-07.webp',alt:'M3 Media photography — featured image 7'},
-  {src:'assets/slide-08.webp',alt:'M3 Media photography — featured image 8'},
-  {src:'assets/slide-09.webp',alt:'M3 Media photography — featured image 9'},
-  {src:'assets/slide-10.webp',alt:'M3 Media photography — featured image 10'},
-  {src:'assets/slide-11.webp',alt:'M3 Media photography — featured image 11'},
-  {src:'assets/slide-12.webp',alt:'M3 Media photography — featured image 12'},
-  {src:'assets/slide-13.webp',alt:'M3 Media photography — featured image 13'},
-  {src:'assets/slide-14.webp',alt:'M3 Media photography — featured image 14'}
+  {src:'assets/slide-02.webp',alt:'M3 Media photography — featured image 1'},
+  {src:'assets/slide-09.webp',alt:'M3 Media photography — red vintage truck fashion portrait'},
+  {src:'assets/slide-10.webp',alt:'M3 Media photography — featured image 3'}
 ];
 let slide=0;
 let timer;

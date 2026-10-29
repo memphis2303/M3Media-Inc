@@ -1,7 +1,13 @@
-M3 Media Inc. — Version 23 editorial redesign
+M3 Media Inc. — Reference redesign with separate portfolio
 
-Open index.html. Dedicated The Passionate Eye Studio: studio.html.
+Open index.html for homepage, portfolio.html for complete portfolio, studio.html for The Passionate Eye Studio.
 
-Redesigned to match the black-and-gold photography mockup. Includes existing original photos, 14-slide full-width 32:9 hero carousel, 33-photo portfolio lightbox, biography, studio galleries, and FormSubmit contact form sending to maurice@m3mediainc.com.
+Homepage carousel: 3 curated wide-format photographs (original slide-02, slide-03, slide-10), centered and cropped proportionally with CSS background-size: cover (no stretching). Full 32:9 desktop frame; responsive tablet/mobile.
 
-Note: FormSubmit may require a one-time email activation. Gallery category cards link to the complete portfolio rather than filtering categories. No ecommerce checkout is included.
+The 33-image portfolio and keyboard-accessible lightbox now live ONLY on portfolio.html. Homepage retains the six category previews, each linking to the separate portfolio page. Studio remains separate. Contact inquiry form still uses FormSubmit and may require activation.
+
+Deploy the entire m3media-site directory, including assets, together.
+
+V24: Header alignment fixed; desktop layout capped at 1600 CSS pixels to prevent fullscreen expansion; 32:9 carousel retained with three images; second slide replaced with slide-09 (vintage red truck). Portfolio and studio stay separate.
+
+V25 carousel CTA fix: the 'EXPLORE OUR WORK' button is vertically centered with the headline inside the visible slide. Previous conflicting inset positioning is overridden; smaller screens use compact type to avoid clipping.
