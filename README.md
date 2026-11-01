@@ -11,3 +11,9 @@ Deploy the entire m3media-site directory, including assets, together.
 V24: Header alignment fixed; desktop layout capped at 1600 CSS pixels to prevent fullscreen expansion; 32:9 carousel retained with three images; second slide replaced with slide-09 (vintage red truck). Portfolio and studio stay separate.
 
 V25 carousel CTA fix: the 'EXPLORE OUR WORK' button is vertically centered with the headline inside the visible slide. Previous conflicting inset positioning is overridden; smaller screens use compact type to avoid clipping.
+
+Portfolio updated: Portraits, Boudoir, Fitness, Maternity, Creative, Headshots. Clicking a category filters the existing 33 images; clicking it again restores all images.
+
+V28: Homepage portfolio tiles now read Portraits, Boudoir, Fitness, Maternity, Creative, Headshots and link to matching filtered categories on the separate portfolio page.
+
+V30: Removed Aubree from Meet the Creatives; retained Maurice and all V29 gallery/framing changes.

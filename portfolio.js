@@ -20,7 +20,7 @@ function closePortfolio(){
 document.querySelectorAll('.portfolio-open').forEach((button,index)=>{
   button.addEventListener('click',()=>{
     portfolioTrigger=button;
-    showPortfolio(index);
+    showPortfolio(Math.max(0,portfolioPhotos.indexOf(button.querySelector('img'))));
     lightbox.hidden=false;
     document.body.classList.add('lightbox-active');
     lightbox.querySelector('.lightbox-close').focus();
@@ -36,3 +36,29 @@ document.addEventListener('keydown',e=>{
   if(e.key==='ArrowLeft')showPortfolio(activePortfolioIndex-1);
   if(e.key==='ArrowRight')showPortfolio(activePortfolioIndex+1);
 });
+
+// Category cards filter the separate portfolio page; click again to show all.
+const categoryCards=[...document.querySelectorAll('.editorial-categories a[data-category]')];
+const galleryFigures=[...document.querySelectorAll('.portfolio-grid figure')];
+let selectedCategory=null;
+function filterPortfolio(category){
+  selectedCategory=selectedCategory===category?null:category;
+  categoryCards.forEach(a=>{
+    const active=a.dataset.category===selectedCategory;
+    a.classList.toggle('category-selected',active);
+    a.setAttribute('aria-pressed',String(active));
+  });
+  galleryFigures.forEach(fig=>{fig.hidden=!!selectedCategory && fig.dataset.category!==selectedCategory;});
+  // Lightbox navigation should follow only the visible photographs.
+  portfolioPhotos.splice(0,portfolioPhotos.length,...document.querySelectorAll('.portfolio-grid figure:not([hidden]) .portfolio-open img'));
+}
+categoryCards.forEach(card=>card.addEventListener('click',e=>{
+  e.preventDefault();filterPortfolio(card.dataset.category);
+  document.getElementById('portfolio-title').scrollIntoView({behavior:'smooth',block:'start'});
+}));
+
+// Open the category requested from the homepage, without changing other categories.
+const initialCategory = new URLSearchParams(window.location.search).get('category');
+if (initialCategory && categoryCards.some(card => card.dataset.category === initialCategory)) {
+  filterPortfolio(initialCategory);
+}

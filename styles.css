@@ -405,3 +405,21 @@ body:not(.studio-page) .hero-content .hero-link{position:relative!important;z-in
  body:not(.studio-page) .hero-content h1{font-size:clamp(24px,7vw,38px)!important;white-space:normal!important}
  body:not(.studio-page) .hero-content .hero-link{font-size:9px!important;padding:10px 12px!important}
 }
+
+/* Portfolio category selection */
+.portfolio-grid figure[hidden]{display:none!important}
+.editorial-categories a.category-selected{outline:2px solid #c6a15d;outline-offset:-2px}
+.editorial-categories a{cursor:pointer}
+
+/* V29: shift photography downward inside six category tiles so faces stay visible.
+   Object-position toward top shows more of the upper portrait, without moving tiles or labels. */
+.home-categories .editorial-categories img { object-position: center 12% !important; }
+.home-categories .editorial-categories a:nth-child(1) img { object-position: center 8% !important; }
+.home-categories .editorial-categories a:nth-child(2) img { object-position: center 6% !important; }
+.home-categories .editorial-categories a:nth-child(3) img { object-position: center 8% !important; }
+.home-categories .editorial-categories a:nth-child(4) img { object-position: center 8% !important; }
+.home-categories .editorial-categories a:nth-child(5) img { object-position: center 10% !important; }
+.home-categories .editorial-categories a:nth-child(6) img { object-position: center 5% !important; }
+
+/* V30: center the remaining creative profile */
+.bio-grid:has(.bio-card:only-child){grid-template-columns:minmax(0,min(100%,580px));justify-content:center}
