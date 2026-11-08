@@ -1,0 +1,133 @@
+@media screen {
+  :root {
+    color-scheme: dark;
+    --paper: #101116;
+    --card: #181a21;
+    --ink: #f0f1f4;
+    --muted: #b1b5c2;
+    --line: #30323d;
+    --violet: #d6ef9b;
+    --accent: #d6ef9b;
+    --dark: #14151d;
+    --surface: #21232c;
+    --control: #13151b;
+    --soft-accent: #2a3421;
+    --radius: 14px;
+  }
+
+  body { background: radial-gradient(ellipse at 85% 0%, #21212c 0, transparent 48rem), var(--paper); }
+  .topbar { background: #13141be8; border-color: #2a2b35; min-height: 66px; }
+  .brand { gap: 9px; letter-spacing: -.045em; }
+  .brand small { background: #292b35; color: #c8cbd5; border: 1px solid #3b3d49; }
+  .mark { background: var(--accent); color: #171b10; }
+  .topbar nav a { color: #c2c5d0; }
+  .topbar nav a:hover, .topbar nav a[aria-current] { background: #272a34; color: var(--accent); }
+  .skip { background: var(--surface); }
+
+  .page-heading {
+    margin: 20px 0 15px;
+    min-height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 23px clamp(17px,3vw,35px);
+    border: 1px solid #343641;
+    border-radius: var(--radius);
+    background:
+      linear-gradient(90deg, #13141bee 6%, #14151be8 40%, #14151b32 77%),
+      #181a22 url("assets/studio-noir.jpg") right 14% / cover no-repeat;
+  }
+  .page-heading .eyebrow { margin-bottom: 10px; }
+  .page-heading h1 { font-size: clamp(2.2rem, 4.4vw, 3.5rem); letter-spacing: -.064em; }
+  #page-intro { color: #c9ccd6; max-width: 49ch; }
+  .eyebrow { letter-spacing: .16em; }
+  .signal { background: var(--accent); box-shadow: 0 0 11px #d6ef9b44; }
+  .scene-bar { background: #191b23; border-color: #31333e; margin-bottom: 15px; }
+  .scene-meta { color: #c1c4ce; }
+
+  select, input:not([type=checkbox],[type=file],[type=range]), .workflow-dialog textarea {
+    background: var(--control);
+    border-color: #414450;
+    color: var(--ink);
+  }
+  button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible,
+  label:focus-within.file-button, .workflow-dialog textarea:focus-visible { outline-color: var(--accent); }
+  .button { background: var(--surface); border-color: #414450; color: var(--ink); }
+  .button:hover { background: #30333f; }
+  .button.primary { background: var(--accent); border-color: var(--accent); color: #161b0f; }
+  .button.primary:hover { background: #e7f7c7; border-color: #e7f7c7; }
+  .card { box-shadow: 0 12px 30px #0002; }
+  .studio-grid { grid-template-columns: minmax(0, 1fr) minmax(285px, 330px); }
+
+  .viewport-card { background: #151620; color: var(--ink); }
+  .viewport-top, .viewport-footer { background: #1d1f28; }
+  .viewport-top { border-bottom: 1px solid #353743; }
+  .viewport-footer { border-top: 1px solid #353743; }
+  .viewport-footer p { color: #c8cad5; }
+  .viewport-type { color: var(--accent); }
+  .viewport-type::before {
+    display: inline-block; content: ""; width: 6px; height: 6px; margin-right: 6px;
+    border-radius: 50%; background: currentColor; vertical-align: .12em;
+  }
+  .mode { background: #14151c; border-color: #41434f; }
+  .mode button { color: #d5d7e0; }
+  .mode button[aria-pressed=true] { background: #323746; color: #f1f3f8; }
+  #view-portrait { background: #151620; }
+  #portrait-stage { display: block; width: 100%; height: auto; }
+  .portrait-controls {
+    display: flex; align-items: end; gap: 14px; flex-wrap: wrap;
+    border-top: 1px solid #353743; padding: 10px 15px; background: #191b24;
+  }
+  .portrait-controls label { min-width: 175px; }
+  .portrait-controls p, .portrait-status { margin: 0; font-size: .79rem; color: var(--muted); }
+  .portrait-controls p { max-width: 46ch; }
+  .portrait-status { min-height: 140px; padding: 30px 16px; }
+  .viewport-overlay span { background: #14151eea; border-color: #4b4b5c; color: #e9ebf4; }
+
+  .inspector-heading { padding-bottom: 12px; }
+  .fixture-controls { padding: 0 16px 14px; border-bottom: 1px solid var(--line); }
+  .fixture-controls h3 { font-size: .82rem; color: #d8dae3; margin: 0 0 8px; letter-spacing: 0; }
+  .fixture-switches { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 6px; }
+  .fixture-toggle { justify-content: flex-start; min-height: 36px; }
+  .fixture-toggle::before {
+    content: ""; width: 8px; height: 8px; flex: 0 0 8px;
+    border-radius: 50%; border: 1px solid #a2a5b6;
+  }
+  .fixture-toggle[aria-pressed=true] { background: var(--soft-accent); color: var(--accent); border-color: #728454; }
+  .fixture-toggle[aria-pressed=true]::before { background: var(--accent); border-color: var(--accent); }
+  .object-picker-label { margin: 11px 16px 7px; font-size: .78rem; color: var(--muted); }
+  .objects button[aria-pressed=true] { background: #302e41; border-color: #776e9a; color: #f0edff; }
+  .object-icon { color: #bcb0eb; }
+
+  .settings span { background: var(--soft-accent); color: var(--accent); }
+  .photo-caption { color: #d9dbe3; }
+  .photo-img.viewport-image { background: #101116; }
+  .genre-card { border-radius: 12px; }
+  .genre-card span { padding: 11px 13px; }
+  .genre-card:hover, .genre-card[aria-pressed=true] { border-color: #a1b87d; box-shadow: inset 0 0 0 1px #a1b87d; }
+  .photo-tag, .viewport-card .photo-tag { color: var(--accent); }
+  dialog::backdrop { background: #07090bd1; }
+  .toast { border: 1px solid #454856; background: #272b35; }
+  .lighting-card { --line: #ddd7e1; }
+  .lighting-card .eyebrow { color: #57329c; }
+  .lighting-card .field-note { color: #5e5766; }
+
+  @media (max-width: 920px) {
+    .studio-grid { grid-template-columns: minmax(0, 1fr) minmax(245px,280px); }
+  }
+  @media (max-width: 720px) {
+    .studio-grid { grid-template-columns: minmax(0,1fr); }
+    .page-heading { min-height: 138px; margin-top: 13px; padding: 17px; }
+    .page-heading h1 { font-size: clamp(1.95rem, 8vw, 2.65rem); }
+    .page-heading { background-position: center, right 14%; }
+  }
+  @media (max-width: 520px) {
+    .viewport-top { flex-wrap: wrap; }
+    .viewport-top .mode { flex-wrap: wrap; }
+  }
+  @media (max-width: 400px) {
+    .scene-bar label { min-width: 108px; }
+    .viewport-top { padding-inline: 8px; }
+    .mode button { padding-inline: 6px; }
+  }
+}
